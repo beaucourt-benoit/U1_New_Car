@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-import matplotlib as plt 
+import matplotlib.pyplot as plt 
 
 class Car_data:
     
@@ -17,3 +17,8 @@ car_data = Car_data()
 print("data frame", car_data.df)
 print('mean', car_data.df.mean())
 print('describe', car_data.df.describe())
+
+plt.hist(car_data.df, bins = 5, color = ('yellow', 'black', 'white', 'blue', 'red', 'green', 'purple', 'orange', 'brown'), edgecolor = 'red')
+plt.xlabel('valeurs')
+plt.ylabel('nombres')
+plt.title('Exemple d\' histogramme simple')
